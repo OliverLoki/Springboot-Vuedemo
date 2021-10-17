@@ -1,0 +1,20 @@
+#关闭模板引擎缓存
+spring:
+  thymeleaf:
+    cache: false
+  #数据库配置
+  datasource:
+    username: root
+    password: root
+    url: jdbc:mysql://localhost:3306/lokismbms?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8
+#配置端口号
+server:
+  port: 8090
+
+#整合mybatis plus
+mybatis-plus:
+  type-aliases-package: com.loki.pojo
+  mapper-locations: classpath:mapper/*.xml
+  #关闭属性名大写自动转换
+  configuration:
+    map-underscore-to-camel-case: false

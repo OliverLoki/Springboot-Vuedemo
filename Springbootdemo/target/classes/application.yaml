@@ -1,0 +1,20 @@
+#�ر�ģ�����滺��
+spring:
+  thymeleaf:
+    cache: false
+  #���ݿ�����
+  datasource:
+    username: root
+    password: root
+    url: jdbc:mysql://localhost:3306/lokismbms?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8
+#���ö˿ں�
+server:
+  port: 8090
+
+#����mybatis plus
+mybatis-plus:
+  type-aliases-package: com.loki.pojo
+  mapper-locations: classpath:mapper/*.xml
+  #�ر���������д�Զ�ת��
+  configuration:
+    map-underscore-to-camel-case: false
